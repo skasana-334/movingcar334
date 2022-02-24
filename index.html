@@ -19,32 +19,17 @@
     height:100vh;
     position: relative;
     overflow-x: hidden;
+ 
 }
 
-.buil{
-    height: 200px;
-    width: 500%;
-    background-image: url(city.png);
-    position: absolute;
-    bottom: 140px;
-    z-index: 1;
-    display: block;
-    animation: city 1s linear  infinite;
-}
-
-@keyframes city {
-   100%{
-    transform:translateX(-1000px)
-   } 
-}
 .highway{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT39N4VHylkxxb3IWhS4W0mmZmDG635uU7mQ&usqp=CAU");
     position: absolute;
-     height: 20%;
+     height: 10%;
     width: 500%;
     display: block;
     z-index: 1;
-    bottom: 0;
+ bottom: 0;
     left: 0;
     right: 0;
     background-repeat: repeat-x;
@@ -55,6 +40,22 @@
 100%{
   transform: translateX(-1500px);
 }}
+.buil{
+    height: 200px;
+    width: 500%;
+    background-image: url(city.png);
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    display: block;
+    animation: city 1s linear  infinite;
+}
+
+@keyframes city {
+   100%{
+    transform:translateX(-1000px)
+   } 
+}
 .cars{
  position: absolute;
  width: 400px;
@@ -106,8 +107,11 @@ animation: car 1s linear infinite;
 </style>
 <body>
 <div class="sky">
+  
+<div class="highway">
     <div class="buil"></div>
-<div class="highway"></div>
+</div>
+
 <div class="cars">
     <img src="car.png" alt="kl" width="100%">
     <div class="wheel">
